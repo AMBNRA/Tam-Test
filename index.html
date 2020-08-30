@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Tam Test</title>
+    
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row wrapper min-vh-100 flex-column flex-md-row">
+                <aside id="sidebarOfPage">
+                    <nav class="navbar navbar-dark navbar-expand-md p-1 align-items-start flex-column">
+                        <div class="d-flex justify-content-between w-100">
+                            <a id="logo" class="navbar-brand" href="#">
+                                <img src="assets/logo.png">
+                            </a>
+                            <span class="close d-none d-md-block ml-1">
+                                <img src="assets/icon-close.svg">
+                            </span>
+                        </div>
+
+                        <button id="collapsebtnMd" class="btn d-md-none"><span class="fa fa-bars"></span></button>
+
+                        <div id="sidebarCont" class="w-100 d-none d-md-block">
+                            <div class="d-flex flex-column align-items-start h-100 w-100">
+                                <div class="w-100 h-100">
+                                    <ul id="listSidebar" class="flex-column justify-content-between navbar-nav w-100">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <img class="svgImg" src="assets/icon-list.svg"> المهام
+                                                <img class="arrowLeft" src="assets/icon-arrow-left.svg">
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <img src="assets/icon-user.svg" class="svgImg"> الأعضاء
+                                                <img class="arrowLeft" src="assets/icon-arrow-left.svg">
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <img class="svgImg" src="assets/icon-creditcard.svg"> الدفع والفواتير
+                                                <img class="arrowLeft" src="assets/icon-arrow-left.svg">
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <img class="svgImg" src="assets/icon-settings.svg"> إعدادات
+                                                <img class="arrowLeft" src="assets/icon-arrow-left.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-end w-100">
+                                    <div class="dropup border-top border-secondary w-100">
+                                        <a id="avatar-link" class="btn dropdown-toggle d-flex justify-content-between align-items-center w-100" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div>
+                                                <img src="assets/avatar.png" alt="" width="" height="">
+                                            </div>
+                                            <div>
+                                                <p class="mb-0">أريج محمد <br> <span id="avatar2text">تام</span></p>
+                                            </div>
+                                        </a>
+                                    
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">مثال 1</a>
+                                            <a class="dropdown-item" href="#">مثال 2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+
+                <div class="col bg-faded p-0">
+                    <header class="d-flex divswhite p-1">
+                        <button id="collapsebtn" class="btn hide"><span class="fa fa-bars"></span></button>
+
+                        <div class="d-flex justify-content-end w-100">
+                            <div id="all-task" class="dropdown">
+                                <a class="btn dropdown-toggle d-flex justify-content-between align-items-center w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div id="textAllTask">
+                                        <p class="m-0 p-0"> 
+                                            جميع المهام
+                                        </p>
+                                    </div>
+                                </a>
+                            
+                                <div id="sortableList" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">مهمة 1</a>
+                                    <a class="dropdown-item" href="#">مهمة 2</a>
+                                </div>
+                            </div>
+                        
+                            <input id="search" type="text" placeholder="بحث">
+                        </div>
+                    </header>
+
+                    <main class="container-fluid" id="sortableDiv">
+                        <div id="design">
+                            <p class="titleInMain">التصميم:</p>
+
+                            <div id="div1" class="divswhite d-flex flex-column  justify-content-between">
+                                <div class="d-flex">
+                                    <input type="checkbox" name="div1-1" value="valuable" id="div1-1" checked>
+                                    <label class="lableCheck w-100" for="div1-1">
+                                        تصميم الشكل العام وتجهيز المهام وتسليمه
+                                    </label>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input type="checkbox" name="div1-2" value="valuable" id="div1-2" checked>
+                                        <label class="lableCheck w-100" for="div1-2">
+                                            تحويل التصميم إلى HTML + CSS
+                                        </label>
+                                    </div> 
+                                    <div class="leftDinDes">
+                                        <span class="leftSpan">
+                                            CSS
+                                        </span>
+                                    </div>           
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input type="checkbox" name="div1-3" value="valuable" id="div1-3" checked>
+                                        <label class="lableCheck w-100" for="div1-3">
+                                            جعل التصميم متجاوب مع المتصفحات الصغيرة (Responsive)
+                                        </label>            
+                                    </div>
+                                    <div class="leftDinDes">
+                                        <span class="leftSpan">
+                                            CSS
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input type="checkbox" name="div1-4" value="valuable" id="div1-4" checked>
+                                        <label class="lableCheck w-100" for="div1-4">جعل التصميم متوافق كحد أدنى مع IE9</label>            
+                                    </div>
+                                    <div class="leftDinDes">
+                                        <span class="leftSpan">
+                                            Browsers
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between ">
+                                    <div>
+                                        <input type="checkbox" name="div1-5" value="valuable" id="div1-5" checked>
+                                        <label class="lableCheck w-100" for="div1-5">
+                                            استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-ablel/Theme-able)
+                                        </label>            
+                                    </div>
+                                    <div class="leftDinDes">
+                                        <span class="leftSpan">
+                                            SASS
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="enhance">
+                            <p class="titleInMain">تحسينات:</p>
+
+                            <div id="div2" class="divswhite d-flex flex-column  justify-content-between">
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div2-1" value="valuable" id="div2-1" checked>
+                                    <label class="lableCheck w-100" for="div2-1">إمكانية إخفاء القائمة الجانبية</label>
+                                </div>
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div2-2" value="valuable" id="div2-2" checked>
+                                    <label class="lableCheck w-100" for="div2-2">إمكانية تعليم المهام كمنتهية  </label>
+                                </div>
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div2-3" value="valuable" id="div2-3" checked>
+                                    <label class="lableCheck w-100" for="div2-3">إمكانية إعادة ترتيب المهام والمجموعات    </label>
+                                </div>
+
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div2-4" value="valuable" id="div2-4" checked>
+                                    <label class="lableCheck w-100" for="div2-4">التوافقية مع أجهزة اللمس</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="other">
+                            <p class="titleInMain">أخرى:</p>
+
+                            <div id="div3" class="divswhite d-flex flex-column justify-content-between">
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div3-1" value="valuable" id="div3-1" checked="">
+                                    <label class="lableCheck w-100" for="div3-1">تسليم المشروع النهائي في git repository مع ملاحظة استخدام git flow</label>
+                                </div>
+                                <div class="d-flex p-1">
+                                    <input type="checkbox" name="div3-2" value="valuable" id="div3-2" checked="">
+                                    <label class="lableCheck w-100" for="div3-2">إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها</label>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+

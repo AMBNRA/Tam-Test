@@ -1,0 +1,80 @@
+$bodybg: #f6f6f6;
+$colorOfSidbar: #273648;
+$colorOfTextInSidbar: #EDF4FC;
+$navItemHover:#4A90E2;
+$whiteColor: #ffffff;
+$textColorInMain:#666666;
+$titleColor: #30394A;
+$spanColor: #E0E0E0;
+$borderColor: #DDDDDD;
+
+body{
+  background: $bodybg;
+}
+
+#sidebarOfPage{
+    background-color: $colorOfSidbar;
+    color:$colorOfTextInSidbar;
+}
+
+.nav-item, .navbar-dark .navbar-nav .nav-link,#avatar-link, #avatar2text {
+  color: $colorOfTextInSidbar;
+}
+
+.nav-item:hover{
+  background-color: $navItemHover;
+}
+
+#search, #all-task{
+  border: 1px solid $borderColor;
+}
+
+::placeholder {
+  color: #$colorOfContentHeader;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $colorOfContentHeader;
+}
+
+::-ms-input-placeholder {
+  color: $colorOfContentHeader;
+}
+
+.divswhite{
+    background-color: $whiteColor;
+}
+   
+input[type=checkbox] + label
+{
+  color: $textColorInMain;
+}
+
+input[type=checkbox]:checked + label
+{
+    color: $textColorInMain;
+}
+
+.titleInMain{
+  color: $titleColor;
+}
+
+.leftSpan {
+	background-color: $spanColor;
+}
+
+@media (min-width: 275px) {
+  .fa-bars{
+	  color: $whiteColor;
+  }
+}
+
+@media (min-width: 768px) {
+	.fa-bars{
+		color: $colorOfSidbar;
+	}
+}
+
+
+

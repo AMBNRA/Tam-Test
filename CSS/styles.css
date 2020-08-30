@@ -1,0 +1,272 @@
+body {
+  background: #f6f6f6;
+  text-align: right;
+}
+
+@font-face {
+	font-family: myFirstFont;
+  	src: url(../font/DubaiW23-Regular.woff);
+}
+
+div {
+	font-family: myFirstFont;
+}
+
+#sidebarOfPage {
+	background-color: #273648;
+	color: #EDF4FC;
+}
+
+#sidebarCont {
+	margin-top: 5%;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.nav-item {
+	margin-bottom: 3%;
+	color: #EDF4FC;
+}
+
+.nav-item:hover {
+	background-color: #4A90E2;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #EDF4FC;
+}
+
+.svgImg {
+	height: 16px;
+	width: 16px;
+	margin-right: 2%;
+}
+
+#avatar-link {
+	color: #EDF4FC;
+	font-size: 14px;
+}
+
+#avatar2text{
+  font-size: 11px;
+  color: #EDF4FC;
+  opacity: 50%;
+}
+
+#search, #all-task{
+  border: 1px solid #DDDDDD; /**/
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #B5B5B5;
+  opacity: 1; /* Firefox */
+  padding-right: 10px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11, Microsoft Edge*/
+  color: #B5B5B5;
+  padding-right: 10px;
+}
+
+::-ms-input-placeholder{
+	color: #B5B5B5;
+	padding-right: 10px;
+}
+
+
+.divswhite {
+	background-color: #ffffff;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	background-image: url(../assets/icon-uncheck.svg) no-repeat right;
+	height: 24px;
+	width: 24px;
+	color: #666666;
+}
+
+input[type=checkbox]:checked + label {
+	background: url(../assets/icon-check.svg) no-repeat right;
+	height: 24px;
+	width: 24px;
+  color: #666666;
+  opacity: 50%;
+	text-decoration: line-through;
+}
+
+.titleInMain {
+	color: #30394A;
+}
+
+#design{
+	margin-top: 33px;
+}
+
+#div1{
+	padding: 15px 10px;
+	height: 315px;
+}
+
+.lableCheck{
+	padding-right: 35px;
+}
+
+.leftDinDes{
+	padding-left: 10px;
+}
+
+.leftSpan {
+	background-color: #E0E0E0;
+	border-radius: 50px;
+	padding: 5px 10px;
+}
+
+#enhance{
+	margin-top: 35px;
+}
+
+#div2{
+	height: 250px;
+	padding: 15px 5px;
+}
+
+#other{
+	margin-top: 40px;
+	margin-bottom: 36px;
+}
+
+#div3{
+	height: 120px;
+	padding: 10px 5px;
+	padding-bottom: 20px;
+}
+
+.hide {
+	display: none;
+}
+
+#sortableDiv {width:99%;}
+
+
+@media (min-width: 275px) {
+	body {
+		font-size: 16px;
+	}
+
+	#sidebarOfPage{
+		width: 100%;
+        
+	}
+
+	#logo{
+		padding: 12px 0px;
+		margin: 0 10px;
+	}
+
+	#sidebarCont {
+		margin-top: 0;
+		height: 300px;
+	  }
+
+	#listSidebar{
+		padding: 5px 0;
+		height: 220px;
+	}
+
+	.nav-item{
+		margin-bottom: 14px;
+		margin-bottom: 0;
+	}
+
+	.svgImg{
+		margin: 0px; width: 18px; margin-left: 7px;
+	}
+
+	.dropup{
+		padding-top: 7px;
+	}
+
+	#avatar-link{
+		padding: 10px 11px;
+	}
+
+	#all-task {
+		padding: 0px 6px;
+		margin: 5px;
+		width: 160px;
+	}
+
+	#textAllTask{
+		padding: 10px;
+	}
+
+	#search{
+		width: 255px;
+		height: 50px;
+		margin: 3px 4px;
+	}
+
+
+
+	#dropdownMenuLink {
+		padding: 0;
+	}
+
+	.leftSpan {
+		font-size: 11px;
+  }
+
+  .fa-bars{
+	  color: white;
+  }
+
+  .arrowLeft{
+	  width: 18px;
+	  height: 18px;
+	  float: left;
+	}
+
+  .nav-link .arrowLeft{
+	display: none;
+}
+  
+  .nav-link:hover .arrowLeft{
+display: inline-block;}
+
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 18px;
+	}
+
+	.menu-content {
+		height: 100%;
+	}
+
+
+	#sidebarOfPage{
+		width: 200px;
+	}
+	#sidebarCont {
+		height: 100%;
+	  }
+
+	.leftSpan {
+		font-size: 13px;
+	}
+
+	.navbar {
+		height: 100%;
+	}
+
+	.fa-bars{
+		color: #273648;
+	}
+}
